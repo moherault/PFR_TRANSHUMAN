@@ -212,6 +212,71 @@ h2{
 }
 
 .Developpement{
-    background: rgba(250, 235, 197, .6) url(PFR_images/Corps-entiers/sys-nerveux.png);
+    padding-top: 2%;
+    height: 1744px;
+    background: rgba(250, 235, 197, .6);
+    color: black;
+    font-size: 200%;
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas: 
+    "d s";
+}
 
+.section-dev{
+    grid-area: d;
+}
+
+.sysnerf{
+    grid-area: s;
+}
+
+.sysnerf{
+    background: url(PFR_images/Corps-entiers/sys-nerveux.png);
+    width: 860px;
+    height: 1587px;
+}
+
+.Gif-dive{
+    /* background: url(PFR_images/chaton.jpg) center/cover no-repeat; */
+    width: 100%;
+}
+
+.Conclusion{
+    background: url(PFR_images/matrix-style.gif) center / cover no-repeat;
+    height: 1623px;
+    display: flex;   
+}
+
+.citation{
+    color: white;
+    font-size: 210%;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+}
+
+.ACC{
+    font-family: 'Rubik', sans-serif;
+    font-size: 190%;
+    color: white;
+}
+
+.Bibliographie{
+    padding-top: 4%;
+    height: 70vh;
+    background: black;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+h4{
+    font-style: italic;
+    font-size: 210%;
+}
+
+ul{
+    font-size: 190%;
+    margin: 4%;
 }

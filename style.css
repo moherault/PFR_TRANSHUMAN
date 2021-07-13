@@ -164,7 +164,54 @@ h2{
 /* -----INTRO START-------- */
 
 .Intro{
+    height: auto;
+    display: flex;
+    align-items: center;
+    background: rgba(139, 89, 89, 83%);
+}
+
+.texte-intro{
+    font-size: 220%;
+    color: white;
+    padding: 50px;
+    font-family:'Rubik', sans-serif;
+    line-height: 50px;
+}
+
+.Mythologies{
     height: 100vh;
     display: flex;
     align-items: center;
+    background: rgba(196, 196, 196, 1);
+}
+
+.texte-mythologies{
+    color: rgba(0, 0, 0, .5);
+    font-size: 210%;
+    font-family: 'Rubik', sans-serif;
+    text-align: end;
+    padding: 50px;
+}
+
+.Problematique{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.Mokoto-gif{
+    opacity: 61%;
+}
+
+.pb{
+    padding: 50px;
+    font-size: 230%;
+    font-family: 'Rubik', sans-serif;
+    color: rgba(95, 167, 145, .8);
+}
+
+.Developpement{
+    background: rgba(250, 235, 197, .6) url(PFR_images/Corps-entiers/sys-nerveux.png);
+
 }

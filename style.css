@@ -125,7 +125,7 @@
 
 /* -------------BURGER END---------------- */
 
-/* ---ACCUEIL START--- */
+/* ------------ACCUEIL START------------ */
 
 .Accueil{
     height: 100vh;
@@ -195,6 +195,10 @@ h2{
     padding: 50px;
 }
 
+/* ---------INTRO END----------- */
+
+/* ----------PB START------------ */
+
 .Problematique{
     display: flex;
     justify-content: space-between;
@@ -212,6 +216,10 @@ h2{
     font-family: 'Rubik', sans-serif;
     color: rgba(95, 167, 145, .8);
 }
+
+/* ---------PB END----------- */
+
+/* ----------DVP START------------ */
 
 .Developpement{
     padding-top: 2%;
@@ -239,39 +247,51 @@ h2{
     height: 1587px;
 }
 
-.Gif_dive{
-    background: url(PFR_images/fresque.jpg) center/cover no-repeat;
+/* --------------DVP END------------ */
+
+/* -----------CITYSCAPE START--------- */
+
+.Cityscape{
+    background: url(PFR_images/Cityscape.png) center/cover no-repeat;
 }
 
+/* ---------CITYSCAPE END------------ */
+
+/* -----------CCL START-------------- */
 .Conclusion{
-    
-    background: url(PFR_images/video-bg.mov);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Conclusion h4{
+    text-align: center;
+    z-index: 1;
+}
+
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .citation{
-    color: black;
+    color: white;
     font-size: 210%;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
 }
 
-.ACC{
-    font-family: 'Rubik', sans-serif;
-    font-size: 190%;
-    color: black;
-}
-
-.Bibliographie{
-    padding-top: 4%;
-    height: 70vh;
-    background: black;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-}
-
 h4{
     font-style: italic;
     font-size: 210%;
+    width: 70%;
 }
 
 .ml12{
@@ -279,7 +299,21 @@ h4{
     line-height: 1em;
 }
 
+/* ------------------CCL END------------------ */
+
+/* -----------------BIBLIO START------------- */
+
+.Bibliographie{
+    padding-top: 4%;
+    height: 70vh;
+    background: black;
+    color: rgba(250, 250, 250, .5);
+    font-family: 'Rubik', sans-serif;
+}
+
 ul{
     font-size: 190%;
     margin: 4%;
 }
+
+/* ---------BIBLIO END---------- */

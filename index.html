@@ -61,7 +61,69 @@
 
         <div class="Mythologies">
 
-            <img src="PFR_images/Carousel/Galatée.png" alt="Galatée">
+        <div class=slideshow>
+        <input name="slideshow" id=slide_img1 type="radio" class=slide>
+        <input name="slideshow" id=slide_img2 type="radio" class=slide>
+        <input name="slideshow" id=slide_img3 type="radio" class=slide>
+        <input name="slideshow" id=slide_img4 type="radio" class=slide> 
+        <input name="slideshow" id=play_img1 type="radio" checked>  
+        <input name="slideshow" id=pause_img1 type="radio" class=pause>
+        <input name="slideshow" id=pause_img2 type="radio" class=pause>
+        <input name="slideshow" id=pause_img3 type="radio" class=pause>
+        <input name="slideshow" id=pause_img4 type="radio" class=pause>
+
+        <ul>
+        <img class=cache src="PFR_images/Carousel/Galatée.png">
+    
+        <li class=img2>
+        <img src=PFR_images/Carousel/Homonculus.png alt>
+        </li>
+        <li class=img3>
+        <img src=PFR_images/Carousel/Golem.png alt>
+        </li>
+        <li class=img4>
+        <img src=PFR_images/Carousel/Maria.png alt>
+        </li>
+        </ul>
+
+        <div class=play_pause>
+        <label class=play for=play_img1></label>
+        <label class="pause img1" for=pause_img1></label>
+        <label class="pause img2" for=pause_img2></label>
+        <label class="pause img3" for=pause_img3></label>
+        <label class="pause img4" for=pause_img4></label>	
+        </div>
+        <div class=precedent>
+        <label class=img1 for=slide_img1></label>
+        <label class=img2 for=slide_img2></label>
+        <label class=img3 for=slide_img3></label>
+        <label class=img4 for=slide_img4></label>
+        </div>
+        <div class=suivant>
+        <label class=img1 for=slide_img1></label>
+        <label class=img2 for=slide_img2></label>
+        <label class=img3 for=slide_img3></label>
+        <label class=img4 for=slide_img4></label>
+        </div>
+        <div class=puces>
+        <label class=img1 for=slide_img1>
+        <span class=actif_puces></span>
+        </label>
+        <label class=img2 for=slide_img2>
+        <span class=actif_puces></span>
+        </label>
+        <label class=img3 for=slide_img3>
+        <span class=actif_puces></span>
+        </label>	
+        <label class=img4 for=slide_img4>
+        <span class=actif_puces></span>
+        </label>
+        </div> 
+        </div>
+    
+
+
+    
 
             <p class="texte-mythologies">
                 Les mythologies sont pleines d’êtres qui incanent cette dualité, des exemples d’hybrides humains-animaux, humains-végétaux.
@@ -114,7 +176,7 @@
         </div>
 
         <div class="Cityscape">
-            <img src="PFR_images/Cityscape.png" alt="Cityscape">
+            <img src="PFR_images/Cityscape.png" alt="Cityscape" width="100%">
         </div>
 
         <div class="Conclusion">
@@ -137,11 +199,14 @@
 
         <div class="Bibliographie">
             <h4>Références bibliographiques et graphiques</h4>
-            <ul>
+            <ul class="biblio">
                 <li> Amartin-Serin, Annie. « Avatars modernes de la créature artificielle », La Création défiée. L’homme fabriqué dans la littérature, sous la direction de Amartin-Serin Annie. Presses Universitaires de France, 1996, pp. 287-320.</li>
                 <br>
-                <li>Arthur Gau https://www.arthurgau.com/</li>
+                <li><a href="http://www.arthurgau.com/" target="_blank">Arthur Gau</a></li>
             </ul>
+
+            <a href=" www.linkedin.com/in/morgane-herault-516015108" target="_blank"><img src="PFR_images/linkedin.png" alt="linkedin" class="linkedin">
+            </a>
         </div>
 
 

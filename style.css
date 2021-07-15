@@ -105,7 +105,7 @@ input,.precedent,.suivant{display:none}
 
 label{cursor:pointer}  
     
-/************************debut sildeshow****************************/ 
+
 .slideshow > ul,.cache{max-height:80vh}
 
 
@@ -124,7 +124,7 @@ overflow:hidden}
 display:flex;
 width:100%;
 height:100%;
-transform:translate3d(0,0,0);/*accelere l'animation / optionnel*/
+transform:translate3d(0,0,0);
 position:absolute;
 top:0;
 left:0;
@@ -152,7 +152,7 @@ transition:transform 2s cubic-bezier(.4,1,.2,1)}
 .slideshow > #slide_img4:checked ~ ul > li,
 .slideshow > #pause_img4:checked ~ ul > li {transform: translatex(-300%)}
 
-/*******************animation slide********************/
+
 @keyframes slide {
 0%, 13%{transform:translatex(0)}
 25%, 38%{transform:translatex(-100%)}
@@ -160,7 +160,7 @@ transition:transform 2s cubic-bezier(.4,1,.2,1)}
 75%, 88%{transform:translatex(-300%)}
 }  
     
-/******************fleches**************************/
+
     
 .slideshow > .precedent,
 .slideshow > .suivant{position:absolute;top:50%;z-index:1}
@@ -231,19 +231,19 @@ transition:.3s ease}
 .slideshow > #play_img1:checked ~ .suivant > label.img1 {animation:anim_fleches 17.2s infinite 10.9s}
 
 
-/* stop */
+
 .slideshow > .slide:checked ~ .precedent > label,
 .slideshow > .slide:checked ~ .suivant > label,
 .slideshow > .pause:checked ~ .precedent > label,
 .slideshow > .pause:checked ~ .suivant > label{animation-play-state:paused}
 
-/*********************************animation fleches*************************************************/
+
 @keyframes anim_fleches {0%,24.99%{opacity:1;z-index:1}25%,100%{ opacity:0;z-index:-1}}
 
     
     .slideshow:hover{animation-play-state:paused    }
     
-/********************bouton play/pause*************************/
+
 .slideshow > .play_pause,.slideshow > .play_pause > label{position:absolute}
     
 .slideshow > .play_pause {top:50%;left:50%;z-index:1}
@@ -275,8 +275,6 @@ z-index:-1}
 .slideshow > #play_img1:checked ~ .play_pause > .pause.img4 {animation:anim_fleches 17.2s infinite 10.9s}
 
     
-    
-/* stop */
 .slideshow > .slide:checked ~ .play_pause > .pause,
 .slideshow > .pause:checked ~ .play_pause > .pause{animation-play-state:paused}
 
@@ -292,7 +290,6 @@ z-index:-1}
 .slideshow > .suivant {transition: .4s .3s ease}
     
   
-/*apparition/disparition des fleches + bouton play/pause*/
 .slideshow > .precedent,
 .slideshow > .suivant,
 .slideshow > .play_pause{opacity:0}
@@ -323,7 +320,6 @@ font-size:2rem;
 color:hsl(0,0%,100%)}
 
 
-/***************************navigation puces bas********************************/
 .slideshow > .puces {
 position:absolute;
 left:0;
@@ -342,7 +338,6 @@ padding:.5rem;
 border-radius:50%;
 background-color:hsla(0,0%,0%,.6)}
 
-/********************simulation lien actif sur les puces******************************/
 .slideshow > .puces > label > .actif_puces {
 position:absolute;
 top:0;
@@ -367,7 +362,7 @@ transform:scale(0)}
 
 
 
-/* bouton play -  puces */
+
 
 .slideshow > #play_img1:checked ~ .puces > label.img1 > .actif_puces{animation:anim_puces 17.2s infinite -2s}
     
@@ -383,11 +378,11 @@ transform:scale(0)}
 .slideshow > #play_img1:checked ~ .puces > label > .actif_puces,
 .slideshow > .pause:checked ~ .puces > label > .actif_puces{transition:none}
     
- /* stop */
+
 
 .slideshow > .slide:checked ~ .puces > label > .actif_puces,
 .slideshow > .pause:checked ~ .puces > label > .actif_puces{animation-play-state:paused}   
-/********************************navigation puces bas****************************/
+
 
  @media screen and (min-width:41.5rem){
      .slideshow{max-width:41.5rem}

@@ -136,6 +136,7 @@
 
 h1{
     color: white;
+    height: auto;
     opacity: 100%;
     font-size: 1100%;
     line-height: 100%;
@@ -649,15 +650,29 @@ h4{
     color: rgba(255, 255, 255, .5);
 }
 
-
 /* ---------BIBLIO END---------- */
 
 /* -------RESPONSIVE START-------- */
 
 @media (max-width: 1163px){
+
+    .Accueil{
+        flex-direction: column;
+    }
+
     .Intro{
+        font-size: 15px;
         display: flex;
         flex-direction: column;
+    }
+
+    h1{
+        opacity: .8;
+    }
+
+    h2{
+        height: 0;
+        z-index: 2;
     }
 
     .Mythologies{
@@ -682,9 +697,7 @@ h4{
     }
 
     .section-dev{
-        background: url(PFR_images/Corps-entiers/sys-nerveux.png)no-repeat;
-        opacity: .5;
-
+        background: url(PFR_images/Corps-entiers/sys-r.png)no-repeat;
     }
 
     .Bibliographie{
@@ -692,6 +705,26 @@ h4{
         flex-direction: column;
         height: auto;
     }
+}
 
+@media (max-width: 700px){
 
+    h1{
+        opacity: .5;
+    }
+    .Problematique{
+        background: url(PFR_images/mokoto-transparente.gif) center/cover no-repeat;
+    }
+
+    .pb{
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .Mokoto-gif{
+        display: none;
+    }
+
+    .Bibliographie{
+        font-size: 10px;
+    }
 }

@@ -395,6 +395,7 @@ transform:scale(0)}
     }
 
 
+
 /* -------CAROU END--------- */
 /* ----------PB START------------ */
 
@@ -572,6 +573,7 @@ h4{
         display: none;
     }
 
+
     .section-dev{
         background: url(PFR_images/Corps-entiers/sys-r.png)no-repeat;
     }
@@ -622,13 +624,29 @@ h4{
         display: none;
     }
 
+
     .Bibliographie{
         font-size: 10px;
     }
 }
 
+
 @media (max-width: 350px){
     .ss-titre{
         font-size: 200%;
     }
+
+    .p1{
+        font-size: 50%;
+    }
+
+    .p2{
+        font-size: 50%;
+    }
+
+    .p3{
+        font-size: 50%;
+    }
+
+
 }

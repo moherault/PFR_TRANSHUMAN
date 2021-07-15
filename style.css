@@ -182,8 +182,6 @@ h2{
 
 .couverture{
     width: 100%;
-    
-
 }
 
 /* ---------INTRO END----------- */
@@ -667,6 +665,10 @@ h4{
         flex-direction: column-reverse;
     }
 
+    .slideshow{
+        width: auto;
+    }
+
     .texte-mythologies{
         text-align: left;
     }
@@ -686,4 +688,6 @@ h4{
         flex-direction: column;
         height: auto;
     }
+
+
 }
